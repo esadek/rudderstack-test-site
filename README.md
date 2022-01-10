@@ -6,8 +6,8 @@ Simple website for sending test events with the [RudderStack JavaScript SDK](htt
 
 [Clone](https://github.com/git-guides/git-clone) repository into a new directory:
 
-```
-$ git clone https://github.com/esadek/rudderstack-test-site.git
+```bash
+git clone https://github.com/esadek/rudderstack-test-site.git
 ```
 
 ## Usage
