@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>RudderStack Test Site</title>
+  </head>
+  <body>
+    <div class="buttons are-medium m-5">
+      <button class="button is-info is-outlined" onclick="identify()">Identify</button>
+      <button class="button is-info is-outlined" onclick="page()">Page</button>
+      <button class="button is-info is-outlined" onclick="track()">Track</button>
+      <button class="button is-info is-outlined" onclick="alias()">Alias</button>
+      <button class="button is-info is-outlined" onclick="group()">Group</button>
+      <button class="button is-info is-outlined" onclick="reset()">Reset</button>
+    </div>
+
+    <script>rudderanalytics=window.rudderanalytics=[];for(var methods=["load","page","track","identify","alias","group","ready","reset","getAnonymousId","setAnonymousId"],i=0;i<methods.length;i++){var method=methods[i];rudderanalytics[method]=function(a){return function(){rudderanalytics.push([a].concat(Array.prototype.slice.call(arguments)))}}(method)}rudderanalytics.load("WRITE_KEY","DATA_PLANE_URL"),rudderanalytics.page();</script>
+    <script src="https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js"></script>
+    <script src="main.js"></script> 
+  </body>
+</html>
